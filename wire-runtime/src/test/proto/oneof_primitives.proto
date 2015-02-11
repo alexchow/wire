@@ -1,0 +1,14 @@
+package squareup.protos.oneof;
+
+option java_package = "com.squareup.wire.protos.one_of";
+
+import "google/protobuf/descriptor.proto";
+
+message OneOfPrimitives {
+  optional string dummy = 1;
+  oneof test_oneof {
+    string name = 2;
+    uint32 customer_id = 2;
+  }
+}
+
